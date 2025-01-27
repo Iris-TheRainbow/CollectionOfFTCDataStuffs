@@ -42,7 +42,7 @@ url = "https://api.ftcscout.org/graphql"
 
 r = requests.post(url, json={"query": initalQuery})
 count = int(r.json()["data"]["matchRecords"]["count"] / 50) + 1
-print(str(count))
+print("Requests to make: " + str(count))
 none = []
 l1 = []
 l2 = []
